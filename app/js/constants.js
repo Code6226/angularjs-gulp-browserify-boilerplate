@@ -5,4 +5,4 @@ var AppSettings = {
   apiUrl: '/api/v1'
 };
 
-module.exports = AppSettings;
+export default AppSettings;

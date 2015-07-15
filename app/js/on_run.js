@@ -3,7 +3,7 @@
 /**
  * @ngInject
  */
-function OnRun($rootScope, AppSettings) {
+export default function OnRun($rootScope, AppSettings) {
 
   // change page title based on state
   $rootScope.$on('$stateChangeSuccess', function(event, toState) {
@@ -18,5 +18,3 @@ function OnRun($rootScope, AppSettings) {
   });
 
 }
-
-module.exports = OnRun;

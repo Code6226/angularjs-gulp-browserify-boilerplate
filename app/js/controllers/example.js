@@ -1,6 +1,6 @@
 'use strict';
 
-var controllersModule = require('./_index');
+let angular = require('angular');
 
 /**
  * @ngInject
@@ -14,5 +14,4 @@ function ExampleCtrl() {
   vm.number = 1234;
 
 }
-
-controllersModule.controller('ExampleCtrl', ExampleCtrl);
+angular.module('app.controllers').controller('ExampleCtrl', ExampleCtrl);
